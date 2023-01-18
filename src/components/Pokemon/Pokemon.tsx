@@ -51,7 +51,7 @@ const Pokemon = () => {
 
   return (
     <MainPokemonContainer>
-      <BackButton key="back" to={"/"}>
+      <BackButton key="back" to={"/pokemongo/"}>
         Back
       </BackButton>
       {loading ? (
