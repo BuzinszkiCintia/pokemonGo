@@ -20,13 +20,13 @@ const TypeOfPokemons = ({ url, checked, search }: Props) => {
 
   let PokemonTypes = sessionStorage.getItem("PokemonTypes");
   let data;
-
+  console.log(PokemonTypes);
   if (PokemonTypes === null || PokemonTypes === "undefined") {
     sessionStorage.setItem("PokemonTypes", JSON.stringify(Fetch(url).data));
   } else {
     data = JSON.parse(PokemonTypes);
   }
-
+  console.log(data);
   return (
     <TypeOfPokemonsContainer>
       {data?.pokemon
