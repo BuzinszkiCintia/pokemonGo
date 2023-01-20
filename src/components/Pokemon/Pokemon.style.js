@@ -26,8 +26,8 @@ export const PokemonCardContainer = styled.div`
 
 export const PokemonCard = styled.div`
   position: relative;
-  width: 620px;
-  height: 550px;
+  width: 520px;
+  height: 450px;
   margin: 30px;
   background-color: #287bff;
   border-radius: 20px;
@@ -104,13 +104,13 @@ export const PokemonContent = styled.div`
   text-align: center;
   color: white;
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   }
 
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bolder;
     margin: 0.3rem;
   }
@@ -126,12 +126,12 @@ export const PokemonContent = styled.div`
 `;
 
 export const CatchButton = styled.button`
-  padding: 1rem 4rem 1rem 4rem;
-  margin: 2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 1rem;
   font-weight: bolder;
-  font-size: larger;
+  font-size: large;
   text-transform: uppercase;
-  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+
   color: black;
   background-color: rgba(218, 44, 56);
   border-radius: 2rem;
