@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const TypeOfPokemonsContainer = styled.div`
-  max-width: 80%;
+  width: 80%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
   grid-row-gap: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
 `;
 export const PokeCards = styled.div`
   height: 5rem;
