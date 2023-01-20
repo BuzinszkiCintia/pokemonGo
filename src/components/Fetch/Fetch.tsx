@@ -5,10 +5,14 @@ const Fetch = (url: string) => {
   const [loading, setLoading] = useState(true);
 
   const fetchPokemons = async () => {
-    const response = await fetch(url);
-    const datas = await response.json();
-    setData(datas);
-    setLoading(false);
+    try {
+      const response = await fetch(url);
+      const datas = await response.json();
+      setData(datas);
+      setLoading(false);
+    } catch (e) {
+      console.log("Error fetching data!");
+    }
   };
 
   useEffect(() => {
