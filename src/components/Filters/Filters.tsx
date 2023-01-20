@@ -7,7 +7,7 @@ import {
   Search,
   Label,
 } from "./Filters.style";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface ItemData {
   name: string;
@@ -26,11 +26,13 @@ const Types = ({ setTypeURL, setChecked, checked, setSearch }: Props) => {
   let catchedPokemons = JSON.parse(sessionStorage.getItem("Catched") || "[]");
   const { data } = Fetch("https://pokeapi.co/api/v2/type");
   const [type, setType] = useState(TYPE || "");
+  const [disabled, setDisabled] = useState(false);
 
   let handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     sessionStorage.setItem("TYPE", e.target.value);
     setType(e.target.value);
     setTypeURL(e.target.value);
+    setDisabled(true);
   };
 
   const handleChecked = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,11 +45,21 @@ const Types = ({ setTypeURL, setChecked, checked, setSearch }: Props) => {
     }
   };
 
+  useEffect(() => {
+    if (type) {
+      setDisabled(true);
+    }
+  }, []);
+
   return (
     <Main>
       <div>
         <FilterContainer>
-          <DropDownList onChange={handleOptionChange} value={type}>
+          <DropDownList
+            onChange={handleOptionChange}
+            value={type}
+            disabled={disabled}
+          >
             <ListItem value="" disabled>
               Choose pokemon type...
             </ListItem>
