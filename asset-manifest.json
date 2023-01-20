@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pokemongo/static/css/main.073c9b0a.css",
+    "main.css": "/pokemongo/static/css/main.df4ebdd3.css",
     "main.js": "/pokemongo/static/js/main.abb38079.js",
     "static/js/787.cfa02916.chunk.js": "/pokemongo/static/js/787.cfa02916.chunk.js",
     "static/media/logo.png": "/pokemongo/static/media/logo.0239cc92c4f506936b4f.png",
     "index.html": "/pokemongo/index.html",
-    "main.073c9b0a.css.map": "/pokemongo/static/css/main.073c9b0a.css.map",
+    "main.df4ebdd3.css.map": "/pokemongo/static/css/main.df4ebdd3.css.map",
     "main.abb38079.js.map": "/pokemongo/static/js/main.abb38079.js.map",
     "787.cfa02916.chunk.js.map": "/pokemongo/static/js/787.cfa02916.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
+    "static/css/main.df4ebdd3.css",
     "static/js/main.abb38079.js"
   ]
 }
