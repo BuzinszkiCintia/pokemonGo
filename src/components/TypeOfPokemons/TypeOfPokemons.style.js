@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const TypeOfPokemonsContainer = styled.div`
-  max-width: 80%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 5rem;
@@ -28,7 +28,7 @@ export const PokeCards = styled.div`
 `;
 
 export const PokeLabel = styled(Link)`
-  margin: 0;
+  margin: 1rem;
   font-weight: bolder;
   font-size: 1.3rem;
   text-transform: uppercase;
